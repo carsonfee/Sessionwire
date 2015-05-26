@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#include "SWSockets.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

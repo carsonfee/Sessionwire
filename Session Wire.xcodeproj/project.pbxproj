@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6B37A5A1B01930A007D7FF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A591B01930A007D7FF1 /* AppDelegate.m */; };
+		F6B37A5A1B01930A007D7FF1 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A591B01930A007D7FF1 /* AppDelegate.mm */; };
 		F6B37A5C1B01930A007D7FF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A5B1B01930A007D7FF1 /* main.m */; };
 		F6B37A5E1B01930A007D7FF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B37A5D1B01930A007D7FF1 /* Images.xcassets */; };
 		F6B37A611B01930A007D7FF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B37A5F1B01930A007D7FF1 /* MainMenu.xib */; };
 		F6B37A6D1B01930A007D7FF1 /* Session_WireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A6C1B01930A007D7FF1 /* Session_WireTests.m */; };
+		F6B37A791B019CE4007D7FF1 /* VideoView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A781B019CE4007D7FF1 /* VideoView.mm */; };
+		F6B37A7D1B01A103007D7FF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B37A7C1B01A103007D7FF1 /* AVFoundation.framework */; };
+		F6B37A811B02F5C7007D7FF1 /* SWSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B37A7F1B02F5C7007D7FF1 /* SWSockets.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +31,21 @@
 		F6B37A531B01930A007D7FF1 /* Session Wire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Session Wire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B37A571B01930A007D7FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B37A581B01930A007D7FF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F6B37A591B01930A007D7FF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6B37A591B01930A007D7FF1 /* AppDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		F6B37A5B1B01930A007D7FF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6B37A5D1B01930A007D7FF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6B37A601B01930A007D7FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F6B37A661B01930A007D7FF1 /* Session WireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Session WireTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B37A6B1B01930A007D7FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B37A6C1B01930A007D7FF1 /* Session_WireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session_WireTests.m; sourceTree = "<group>"; };
+		F6B37A771B019CE4007D7FF1 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		F6B37A781B019CE4007D7FF1 /* VideoView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = VideoView.mm; sourceTree = "<group>"; };
+		F6B37A7A1B019FD1007D7FF1 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		F6B37A7C1B01A103007D7FF1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F6B37A7F1B02F5C7007D7FF1 /* SWSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SWSockets.cpp; sourceTree = "<group>"; };
+		F6B37A801B02F5C7007D7FF1 /* SWSockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSockets.h; sourceTree = "<group>"; };
+		F6B37A821B03023B007D7FF1 /* atomicops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = atomicops.h; sourceTree = "<group>"; };
+		F6B37A841B030323007D7FF1 /* readwriterqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readwriterqueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B37A7D1B01A103007D7FF1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,8 @@
 		F6B37A4A1B01930A007D7FF1 = {
 			isa = PBXGroup;
 			children = (
+				F6B37A7C1B01A103007D7FF1 /* AVFoundation.framework */,
+				F6B37A7A1B019FD1007D7FF1 /* QTKit.framework */,
 				F6B37A551B01930A007D7FF1 /* Session Wire */,
 				F6B37A691B01930A007D7FF1 /* Session WireTests */,
 				F6B37A541B01930A007D7FF1 /* Products */,
@@ -76,11 +90,15 @@
 		F6B37A551B01930A007D7FF1 /* Session Wire */ = {
 			isa = PBXGroup;
 			children = (
+				F6B37A831B0302E9007D7FF1 /* Lock Free Queue */,
+				F6B37A7E1B02F569007D7FF1 /* Sockets */,
 				F6B37A581B01930A007D7FF1 /* AppDelegate.h */,
-				F6B37A591B01930A007D7FF1 /* AppDelegate.m */,
+				F6B37A591B01930A007D7FF1 /* AppDelegate.mm */,
 				F6B37A5D1B01930A007D7FF1 /* Images.xcassets */,
 				F6B37A5F1B01930A007D7FF1 /* MainMenu.xib */,
 				F6B37A561B01930A007D7FF1 /* Supporting Files */,
+				F6B37A771B019CE4007D7FF1 /* VideoView.h */,
+				F6B37A781B019CE4007D7FF1 /* VideoView.mm */,
 			);
 			path = "Session Wire";
 			sourceTree = "<group>";
@@ -109,6 +127,24 @@
 				F6B37A6B1B01930A007D7FF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B37A7E1B02F569007D7FF1 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				F6B37A7F1B02F5C7007D7FF1 /* SWSockets.cpp */,
+				F6B37A801B02F5C7007D7FF1 /* SWSockets.h */,
+			);
+			name = Sockets;
+			sourceTree = "<group>";
+		};
+		F6B37A831B0302E9007D7FF1 /* Lock Free Queue */ = {
+			isa = PBXGroup;
+			children = (
+				F6B37A821B03023B007D7FF1 /* atomicops.h */,
+				F6B37A841B030323007D7FF1 /* readwriterqueue.h */,
+			);
+			name = "Lock Free Queue";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B37A811B02F5C7007D7FF1 /* SWSockets.cpp in Sources */,
 				F6B37A5C1B01930A007D7FF1 /* main.m in Sources */,
-				F6B37A5A1B01930A007D7FF1 /* AppDelegate.m in Sources */,
+				F6B37A791B019CE4007D7FF1 /* VideoView.mm in Sources */,
+				F6B37A5A1B01930A007D7FF1 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +303,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -308,7 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -398,6 +436,7 @@
 				F6B37A721B01930A007D7FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6B37A731B01930A007D7FF1 /* Build configuration list for PBXNativeTarget "Session WireTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +445,7 @@
 				F6B37A751B01930A007D7FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
